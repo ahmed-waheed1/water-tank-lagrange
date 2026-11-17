@@ -21,9 +21,22 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Water Tank · Lagrange Multipliers | Math 3 (BAS 113)",
+  metadataBase: new URL("https://water-tank-lagrange.vercel.app"),
+  title: {
+    default: "Least-Steel Water Tank · Math 3",
+    template: "%s · Least-Steel Water Tank",
+  },
   description:
-    "Designing an open-top water tank with the least steel using Lagrange multipliers. Badr University in Cairo, Math 3 project.",
+    "Designing an open-top water tank with the least steel using Lagrange multipliers, with a Python solution and an interactive 3D simulation. Math 3 (BAS 113), Badr University in Cairo.",
+  openGraph: {
+    type: "website",
+    siteName: "Least-Steel Water Tank",
+    locale: "en_US",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

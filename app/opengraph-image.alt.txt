@@ -1,0 +1,1 @@
+Designing a Water Tank with the Least Steel: best size 4 × 4 × 2 m, 48 m² of steel, λ = 1.
