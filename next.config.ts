@@ -1,12 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Static export for GitHub Pages (served from the root of tank.ahmedwaheed.me, so no basePath)
+  output: "export",
+  images: { unoptimized: true },
+  trailingSlash: true,
   experimental: {
     agentFeedback: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
   turbopack: {
     rules: {
       "*.css": {
